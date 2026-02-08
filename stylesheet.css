@@ -74,7 +74,14 @@ a:hover {
   text-decoration: none;
 }
 
-body,
+body {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px 0;
+}
+
 td,
 th,
 tr,
@@ -111,13 +118,14 @@ h2 {
 
 .one {
   width: 160px;
-  height: 160px;
+  height: 90px;
   position: relative;
+  display: inline-block;
 }
 
 .two {
   width: 160px;
-  height: 160px;
+  height: 90px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -140,3 +148,37 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* Conference Tags */
+.tag,
+.conference-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 4px;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.tag:hover,
+.conference-tag:hover {
+  opacity: 0.85;
+  color: white;
+}
+
+/* Conference-specific colors */
+.conf-cvpr { background-color: #e74c3c; }
+.conf-iccv { background-color: #c0392b; }
+.conf-eccv { background-color: #d35400; }
+.conf-neurips { background-color: #8e44ad; }
+.conf-icml { background-color: #2980b9; }
+.conf-iclr { background-color: #16a085; }
+.conf-aaai { background-color: #27ae60; }
+.conf-acm-mm { background-color: #f39c12; }
+.conf-ijcv { background-color: #34495e; }
+.conf-tpami { background-color: #2c3e50; }
+.conf-arxiv { background-color: #b71c1c; }
