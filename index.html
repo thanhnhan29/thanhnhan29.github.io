@@ -236,7 +236,7 @@
                       </span>
                     </h2>
                     <p style="margin: 0;">
-                      I'm interested in Computer Vision, Video Understanding,
+                      I'm interested in Computer Vision, Video Reasoning,
                       Generative AI and Scene Graph.
                     </p>
                   </td>
@@ -277,13 +277,8 @@
                   var bgcolor = row.getAttribute("bgcolor");
                   var isSelected = bgcolor && bgcolor.toLowerCase() === "#ffffd0";
 
-                  if (category === 'selected') {
-                    if (isSelected) {
-                      row.style.display = "";
-                      row.style.backgroundColor = "#ffffd0"; // Highlight yellow
-                    } else {
-                      row.style.display = "none";
-                    }
+                  if (category === 'selected' && !isSelected) {
+                    row.style.display = "none";
                   } else {
                     row.style.display = "";
                     if (visibleIndex % 2 === 1) {
@@ -315,7 +310,7 @@
 
                 // Set default to 'all' or 'selected' as preferred. 
                 // Previous default was all.
-                filterPublications('all');
+                filterPublications('selected');
               });
             </script>
 
@@ -332,6 +327,78 @@
               "
             >
               <tbody>
+                <!-- Publication 0: SAGA -->
+                <tr onmouseout="saga_stop()" onmouseover="saga_start()" bgcolor="#ffffd0">
+                  <td style="padding: 16px; width: 20%; vertical-align: middle; text-align: center;">
+                    <div class="one">
+                      <div class="two" id="saga_image">
+                        <img src="images/SAGA.png" width="160" style="height: 90px; object-fit: contain; border-radius: 4px;" />
+                      </div>
+                      <img src="images/SAGA.png" width="160" style="height: 90px; object-fit: contain; border-radius: 4px;" />
+                    </div>
+                    <script type="text/javascript">
+                      function saga_start() {
+                        document.getElementById("saga_image").style.opacity = "1";
+                      }
+                      function saga_stop() {
+                        document.getElementById("saga_image").style.opacity = "0";
+                      }
+                      saga_stop();
+                    </script>
+                  </td>
+                  <td style="padding: 8px; width: 80%; vertical-align: middle">
+                    <span class="tag conf-arxiv">arXiv'26</span>
+                    <a href="https://arxiv.org/abs/2607.xxxx">
+                      <span class="papertitle">SAGA: Stable Acceleration Guidance for Autoregressive Video Generation</span>
+                    </a>
+                    <br />
+                    <strong>Thanh-Nhan Vo</strong>, Trong-Thuan Nguyen, Trung-Hoang Le, Tam V. Nguyen, Minh-Triet Tran
+                    <br />
+                    <em>arXiv (Comming Soon)</em>, 2026
+                    <br />
+                    <a href="https://github.com/thanhnhan29/SAGA">Project Page</a> /
+                    <a href="https://arxiv.org/abs/2607.xxxx">Paper</a> /
+                    <a href="https://github.com/thanhnhan29/SAGA">Code</a>
+                    <p></p>
+                    <p>A training-free stable acceleration guidance framework for autoregressive video generation that suppresses unstable high-frequency kinematic energy while preserving low-frequency semantic motion.</p>
+                  </td>
+                </tr>
+
+                <!-- Publication 0.5: SoccerNet -->
+                <tr onmouseout="soccernet_pub_stop()" onmouseover="soccernet_pub_start()">
+                  <td style="padding: 16px; width: 20%; vertical-align: middle; text-align: center;">
+                    <div class="one">
+                      <div class="two" id="soccernet_pub_image">
+                        <img src="https://img.youtube.com/vi/TjX789boQGM/maxresdefault.jpg" width="160" style="height: 90px; object-fit: contain; border-radius: 4px;" />
+                      </div>
+                      <img src="https://img.youtube.com/vi/TjX789boQGM/maxresdefault.jpg" width="160" style="height: 90px; object-fit: contain; border-radius: 4px;" />
+                    </div>
+                    <script type="text/javascript">
+                      function soccernet_pub_start() {
+                        document.getElementById("soccernet_pub_image").style.opacity = "1";
+                      }
+                      function soccernet_pub_stop() {
+                        document.getElementById("soccernet_pub_image").style.opacity = "0";
+                      }
+                      soccernet_pub_stop();
+                    </script>
+                  </td>
+                  <td style="padding: 8px; width: 80%; vertical-align: middle">
+                    <span class="tag conf-arxiv">arXiv'26</span>
+                    <a href="https://arxiv.org/abs/2607.07320">
+                      <span class="papertitle">SoccerNet 2026 Challenges Results</span>
+                    </a>
+                    <br />
+                    SoccerNet 2026 Team (including <strong>Thanh-Nhan Vo</strong>)
+                    <br />
+                    <em>arXiv</em>, 2026
+                    <br />
+                    <a href="https://arxiv.org/abs/2607.07320">Challenge Report Paper</a>
+                    <p></p>
+                    <p>The SoccerNet 2026 Challenges constitute the sixth annual edition of the SoccerNet open benchmarking effort, dedicated to advancing computer vision research in sports video understanding.</p>
+                  </td>
+                </tr>
+
                 <!-- Publication 1: VENUS -->
                 <tr onmouseout="venus_stop()" onmouseover="venus_start()" bgcolor="#ffffd0">
                   <td style="padding: 16px; width: 20%; vertical-align: middle; text-align: center;">
@@ -352,7 +419,7 @@
                     </script>
                   </td>
                   <td style="padding: 8px; width: 80%; vertical-align: middle">
-                    <span class="tag conf-cvpr">MMM'26</span>
+                    <span class="tag conf-mmm">MMM'26</span>
                     <a href="https://arxiv.org/abs/2601.07219">
                       <span class="papertitle">VENUS: Visual Editing with Noise Inversion Using Scene Graphs</span>
                     </a>
@@ -389,7 +456,7 @@
                     </script>
                   </td>
                   <td style="padding: 8px; width: 80%; vertical-align: middle">
-                    <span class="tag conf-icml">ICMV'26</span>
+                    <span class="tag conf-icmv">ICMV'26</span>
                     <a href="#">
                       <span class="papertitle">TreeSoc: Tree-Structured Dynamic Reasoning and Tool Synergy for Soccer Video Understanding</span>
                     </a>
@@ -426,7 +493,7 @@
                     </script>
                   </td>
                   <td style="padding: 8px; width: 80%; vertical-align: middle">
-                    <span class="tag conf-icml">SOICT'25</span>
+                    <span class="tag conf-soict">SOICT'25</span>
                     <a href="https://arxiv.org/abs/2601.21498">
                       <span class="papertitle">SimGraph: A Unified Framework for Scene Graph-Based Image Generation and Editing</span>
                     </a>
@@ -463,7 +530,7 @@
                     </script>
                   </td>
                   <td style="padding: 8px; width: 80%; vertical-align: middle">
-                    <span class="tag conf-icml">MAPR'25</span>
+                    <span class="tag conf-mapr">MAPR'25</span>
                     <a href="#">
                       <span class="papertitle">Saturn: Autoregressive Image Generation Guided by Scene Graphs</span>
                     </a>
@@ -536,7 +603,7 @@
                     </script>
                   </td>
                   <td style="padding: 8px; width: 80%; vertical-align: middle">
-                    <span class="tag" style="background-color: #e74c3c;">ACM MM 2026</span>
+                    <span class="tag conf-acmmm">ACM MM 2026</span>
                     <a href="https://tridentatmm26mgc.github.io/trident.github.io/">
                       <span class="papertitle">TRIDENT: Tri-modal Deepfake Perception, Detection, and Hallucination Grand Challenge</span>
                     </a>
@@ -554,9 +621,9 @@
                   <td style="padding: 16px; width: 20%; vertical-align: middle; text-align: center;">
                     <div class="one">
                       <div class="two" id="soccernet_image">
-                        <img src="images/soccernet.png" width="160" style="height: 90px; object-fit: contain; border-radius: 4px;" />
+                        <img src="https://img.youtube.com/vi/TjX789boQGM/maxresdefault.jpg" width="160" style="height: 90px; object-fit: contain; border-radius: 4px;" />
                       </div>
-                      <img src="images/soccernet.png" width="160" style="height: 90px; object-fit: contain; border-radius: 4px;" />
+                      <img src="https://img.youtube.com/vi/TjX789boQGM/maxresdefault.jpg" width="160" style="height: 90px; object-fit: contain; border-radius: 4px;" />
                     </div>
                     <script type="text/javascript">
                       function soccernet_start() {
@@ -569,12 +636,12 @@
                     </script>
                   </td>
                   <td style="padding: 8px; width: 80%; vertical-align: middle">
-                    <span class="tag" style="background-color: #2980b9;">CVPR 2026</span>
+                    <span class="tag conf-cvpr">CVPR 2026</span>
                     <a href="https://www.soccer-net.org/challenges/2026">
                       <span class="papertitle">SoccerNet Challenge 2026 - Visual Question Answering (VQA)</span>
                     </a>
                     <br />
-                    <em>Top 10</em>
+                    <em>Top 10</em> &nbsp;/&nbsp; <a href="https://arxiv.org/abs/2607.07320">Challenge Report Paper</a>
                     <br />
                     <p style="text-align: justify; margin-top: 8px;">
                       Tackled <strong style="color: #1772d0">14 distinct multi-modal QA tasks</strong> (text, image, and video) aimed at comprehensive soccer understanding. Demonstrated strong reasoning capabilities to secure a <strong style="color: #2980b9">Top 10</strong> position on the final challenge leaderboard.
