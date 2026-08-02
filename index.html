@@ -138,6 +138,14 @@
               "
             >
               <tbody>
+                <!-- News Item -4 -->
+                <tr>
+                  <td style="padding: 8px 0; vertical-align: top;">
+                    <span style="color: #888; font-size: 13px;">[Aug 2026]</span>
+                    One paper accepted at <strong style="color: #1772d0;">AI City Challenge Workshop @ ECCV 2026</strong>.
+                  </td>
+                </tr>
+
                 <!-- News Item -3 -->
                 <tr>
                   <td style="padding: 8px 0; vertical-align: top;">
@@ -335,6 +343,40 @@
               "
             >
               <tbody>
+                <!-- Publication -1: AICity -->
+                <tr onmouseout="aicity_stop()" onmouseover="aicity_start()" bgcolor="#ffffd0">
+                  <td style="padding: 16px; width: 20%; vertical-align: middle; text-align: center;">
+                    <div class="one">
+                      <div class="two" id="aicity_image">
+                        <img src="images/AICity.png" width="160" style="height: 90px; object-fit: contain; border-radius: 4px;" />
+                      </div>
+                      <img src="images/AICity.png" width="160" style="height: 90px; object-fit: contain; border-radius: 4px;" />
+                    </div>
+                    <script type="text/javascript">
+                      function aicity_start() {
+                        document.getElementById("aicity_image").style.opacity = "1";
+                      }
+                      function aicity_stop() {
+                        document.getElementById("aicity_image").style.opacity = "0";
+                      }
+                      aicity_stop();
+                    </script>
+                  </td>
+                  <td style="padding: 8px; width: 80%; vertical-align: middle">
+                    <span class="tag conf-eccv">ECCVW'26</span>
+                    <a href="#">
+                      <span class="papertitle">Action-Aligned Retrieval with Pairwise Multimodal Reranking for Text-Based Person Anomaly Search</span>
+                    </a>
+                    <br />
+                    Thanh-Khoi Nguyen<sup>&dagger;</sup>, <strong>Thanh-Nhan Vo<sup>&dagger;</sup></strong>, Minh-Triet Tran
+                    <br />
+                    <em>AI City Challenge Workshop at ECCV</em>, 2026
+                    <br />
+                    <p></p>
+                    <p>Action-aligned retrieval with pairwise multimodal reranking for text-based person anomaly search.</p>
+                  </td>
+                </tr>
+
                 <!-- Publication 0: SAGA -->
                 <tr onmouseout="saga_stop()" onmouseover="saga_start()" bgcolor="#ffffd0">
                   <td style="padding: 16px; width: 20%; vertical-align: middle; text-align: center;">
