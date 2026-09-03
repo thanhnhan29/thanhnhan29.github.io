@@ -120,13 +120,22 @@
               <tbody>
                 <tr>
                   <td style="padding: 16px; width: 100%; vertical-align: middle">
-                    <h2 style="color: #1976d2; margin: 0; padding-bottom: 8px; border-bottom: 2px solid #ddd; font-weight: bold;">News</h2>
+                    <h2 style="color: #1976d2; margin: 0; padding-bottom: 8px; border-bottom: 2px solid #ddd; font-weight: bold;">
+                      News 
+                      <span style="font-size: 0.7em; font-weight: normal;">
+                        [<a href="javascript:void(0)" id="news-toggle-recent" onclick="filterNews('recent')">recent <span id="news-count-recent"></span></a> | 
+                        <a href="javascript:void(0)" id="news-toggle-all" onclick="filterNews('all')">all <span id="news-count-all"></span></a> | 
+                        <a href="javascript:void(0)" id="news-toggle-award" onclick="filterNews('award')">awards <span id="news-count-award"></span></a> | 
+                        <a href="javascript:void(0)" id="news-toggle-paper" onclick="filterNews('paper')">papers <span id="news-count-paper"></span></a>]
+                      </span>
+                    </h2>
                   </td>
                 </tr>
               </tbody>
             </table>
 
             <table
+              id="news-table"
               style="
                 width: 100%;
                 border: 0px;
@@ -138,88 +147,96 @@
               "
             >
               <tbody>
-                <!-- News Item -4 -->
-                <tr>
+                <!-- News Item 1 -->
+                <tr class="news-item" data-category="paper">
                   <td style="padding: 8px 0; vertical-align: top;">
                     <span style="color: #888; font-size: 13px;">[Aug 2026]</span>
                     One paper accepted at <strong style="color: #1772d0;">AI City Challenge Workshop @ ECCV 2026</strong>.
                   </td>
                 </tr>
 
-                <!-- News Item -3 -->
-                <tr>
+                <!-- News Item 2 -->
+                <tr class="news-item" data-category="award">
                   <td style="padding: 8px 0; vertical-align: top;">
                     <span style="color: #888; font-size: 13px;">[Jul 2026]</span>
                     Won the <strong style="color: #f09228;">Best Project</strong> award at <strong style="color: #1772d0;">SSIP'26</strong> with team <strong>AgentSys</strong>.
                   </td>
                 </tr>
 
-                <!-- News Item -2 -->
-                <tr>
+                <!-- News Item 3 -->
+                <tr class="news-item" data-category="award">
+                  <td style="padding: 8px 0; vertical-align: top;">
+                    <span style="color: #888; font-size: 13px;">[Jun 2026]</span>
+                    Won the <strong style="color: #f09228;">Second Prize</strong> (Potential Division) at <strong style="color: #1772d0;">HCMUS-CTF 2026</strong>.
+                  </td>
+                </tr>
+
+                <!-- News Item 4 -->
+                <tr class="news-item" data-category="award">
                   <td style="padding: 8px 0; vertical-align: top;">
                     <span style="color: #888; font-size: 13px;">[Jun 2026]</span>
                     Secured <strong style="color: #f09228">Rank 3</strong> in the <strong style="color: #1772d0;">ACM MM 2026</strong> <strong>TRIDENT Grand Challenge</strong>.
                   </td>
                 </tr>
 
-                <!-- News Item -1 -->
-                <tr>
+                <!-- News Item 5 -->
+                <tr class="news-item" data-category="award">
                   <td style="padding: 8px 0; vertical-align: top;">
                     <span style="color: #888; font-size: 13px;">[May 2026]</span>
                     Achieved <strong style="color: #2980b9;">Top 10</strong> in the <strong style="color: #1772d0;">CVPR 2026</strong> <strong>SoccerNetVQA Challenge</strong>.
                   </td>
                 </tr>
 
-                <!-- News Item 0 -->
-                <tr>
+                <!-- News Item 6 -->
+                <tr class="news-item" data-category="milestone">
                   <td style="padding: 8px 0; vertical-align: top;">
                     <span style="color: #888; font-size: 13px;">[Apr 2026]</span>
                     Selected as a <strong>Batch 1 Researcher</strong> at <strong style="color: #1772d0;">SAIH</strong> (Saigon AI Hub).
                   </td>
                 </tr>
 
-                <!-- News Item 1 -->
-                <tr>
+                <!-- News Item 7 -->
+                <tr class="news-item" data-category="paper">
                   <td style="padding: 8px 0; vertical-align: top;">
                     <span style="color: #888; font-size: 13px;">[Jan 2026]</span>
                     Presented our work at <strong style="color: #1772d0;">MMM'26</strong> (International Conference on Multimedia Modeling).
                   </td>
                 </tr>
 
-                <!-- News Item 2 -->
-                <tr>
+                <!-- News Item 8 -->
+                <tr class="news-item" data-category="paper">
                   <td style="padding: 8px 0; vertical-align: top;">
                     <span style="color: #888; font-size: 13px;">[Dec 2025]</span>
                     Presented our work at <strong style="color: #1772d0;">SOICT'25</strong> (International Symposium on Information and Communication Technology).
                   </td>
                 </tr>
 
-                <!-- News Item 3 -->
-                <tr>
+                <!-- News Item 9 -->
+                <tr class="news-item" data-category="award">
                   <td style="padding: 8px 0; vertical-align: top;">
                     <span style="color: #888; font-size: 13px;">[Dec 2025]</span>
                     Received <strong style="color: #f09228;">Special Award</strong> at <strong>Data for Life</strong> (Hack for Growth 2025) with team <strong>AquaSafe</strong>.
                   </td>
                 </tr>
 
-                <!-- News Item 4 -->
-                <tr>
+                <!-- News Item 10 -->
+                <tr class="news-item" data-category="award">
                   <td style="padding: 8px 0; vertical-align: top;">
                     <span style="color: #888; font-size: 13px;">[Nov 2025]</span>
                     Received <strong style="color: #f09228;">THE 2025 LOTTE SHIN KYUK-HO Scholarship Award</strong>.
                   </td>
                 </tr>
 
-                <!-- News Item 4 -->
-                <tr>
+                <!-- News Item 11 -->
+                <tr class="news-item" data-category="paper">
                   <td style="padding: 8px 0; vertical-align: top;">
                     <span style="color: #888; font-size: 13px;">[Aug 2025]</span>
                     Presented my first work at <strong style="color: #1772d0;">MAPR'25</strong> (International Conference on Multimedia Analysis and Pattern Recognition).
                   </td>
                 </tr>
 
-                <!-- News Item 5 -->
-                <tr>
+                <!-- News Item 12 -->
+                <tr class="news-item" data-category="milestone">
                   <td style="padding: 8px 0; vertical-align: top;">
                     <span style="color: #888; font-size: 13px;">[Mar 2025]</span>
                     Started as a <strong>Research Assistant</strong> at <strong style="color: #1772d0;">SELAB</strong> (Software Engineering Laboratory), VNU-HCM
@@ -227,6 +244,85 @@
                 </tr>
               </tbody>
             </table>
+
+            <script>
+              function filterNews(category) {
+                var table = document.getElementById("news-table");
+                var rows = table.getElementsByClassName("news-item");
+                var tabs = {
+                  recent: document.getElementById("news-toggle-recent"),
+                  all: document.getElementById("news-toggle-all"),
+                  award: document.getElementById("news-toggle-award"),
+                  paper: document.getElementById("news-toggle-paper")
+                };
+
+                for (var key in tabs) {
+                  if (tabs[key]) {
+                    if (key === category) {
+                      tabs[key].style.fontWeight = 'bold';
+                      tabs[key].style.color = '#000';
+                      tabs[key].style.textDecoration = 'none';
+                    } else {
+                      tabs[key].style.fontWeight = 'normal';
+                      tabs[key].style.color = '#aaa';
+                      tabs[key].style.textDecoration = 'none';
+                    }
+                  }
+                }
+
+                var RECENT_LIMIT = 5;
+                var matchCount = 0;
+
+                for (var i = 0; i < rows.length; i++) {
+                  var row = rows[i];
+                  var cat = row.getAttribute("data-category");
+
+                  if (category === 'all') {
+                    row.style.display = "";
+                  } else if (category === 'recent') {
+                    if (matchCount < RECENT_LIMIT) {
+                      row.style.display = "";
+                      matchCount++;
+                    } else {
+                      row.style.display = "none";
+                    }
+                  } else if (category === 'award') {
+                    row.style.display = (cat === 'award') ? "" : "none";
+                  } else if (category === 'paper') {
+                    row.style.display = (cat === 'paper') ? "" : "none";
+                  }
+                }
+              }
+
+              // Initialize counts and default view
+              document.addEventListener("DOMContentLoaded", function() {
+                var table = document.getElementById("news-table");
+                var rows = table.getElementsByClassName("news-item");
+                var countAll = rows.length;
+                var countRecent = Math.min(5, countAll);
+                var countAward = 0;
+                var countPaper = 0;
+
+                for (var i = 0; i < rows.length; i++) {
+                  var cat = rows[i].getAttribute("data-category");
+                  if (cat === "award") countAward++;
+                  if (cat === "paper") countPaper++;
+                }
+
+                var recentEl = document.getElementById("news-count-recent");
+                var allEl = document.getElementById("news-count-all");
+                var awardEl = document.getElementById("news-count-award");
+                var paperEl = document.getElementById("news-count-paper");
+
+                if (recentEl) recentEl.innerText = "(" + countRecent + ")";
+                if (allEl) allEl.innerText = "(" + countAll + ")";
+                if (awardEl) awardEl.innerText = "(" + countAward + ")";
+                if (paperEl) paperEl.innerText = "(" + countPaper + ")";
+
+                // Set default to recent
+                filterNews('recent');
+              });
+            </script>
 
             <!-- ==================== SECTION 2: RESEARCH HEADER ==================== -->
             <table
