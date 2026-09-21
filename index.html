@@ -96,7 +96,7 @@
                   <td style="padding: 2.5%; width: 37%; max-width: 37%">
                     <a href="images/avt.jpg"
                       ><img
-                        style="width: 100%; max-width: 100%; object-fit: cover"
+                        style="width: 100%; max-width: 100%; object-fit: cover; border-radius: 8px;"
                         alt="profile photo"
                         src="images/avt.jpg"
                         class="hoverZoomLink"
@@ -147,6 +147,14 @@
               "
             >
               <tbody>
+                <!-- News Item 0: ACCV 2026 -->
+                <tr class="news-item" data-category="paper">
+                  <td style="padding: 8px 0; vertical-align: top;">
+                    <span style="color: #888; font-size: 13px;">[Sep 2026]</span>
+                    Two papers (<strong style="color: #1772d0;">SAGA</strong> and <strong style="color: #1772d0;">SoccerNet 2026 Challenges Results</strong>) accepted at <strong style="color: #1772d0;">ACCV 2026</strong>!
+                  </td>
+                </tr>
+
                 <!-- News Item 1 -->
                 <tr class="news-item" data-category="paper">
                   <td style="padding: 8px 0; vertical-align: top;">
@@ -347,10 +355,21 @@
                         <a href="javascript:void(0)" id="toggle-all" onclick="filterPublications('all')">still my favorites, but all <span id="count-all"></span></a>]
                       </span>
                     </h2>
-                    <p style="margin: 0;">
+                    <p style="margin: 0 0 10px 0;">
                       I'm interested in Computer Vision, Video Reasoning,
                       Generative AI and Scene Graph.
                     </p>
+                    <div class="venue-strip">
+                      <span class="venue-label">Venues</span>
+                      <span class="venue-chip" title="CVPR 2026 - Top 10 SoccerNetVQA Challenge">CVPR <span class="year">'26</span></span>
+                      <span class="venue-chip" title="ECCV 2026 - AI City Challenge Workshop">ECCV <span class="year">'26</span></span>
+                      <span class="venue-chip" title="ACM MM 2026 - Rank 3 TRIDENT Grand Challenge">ACM MM <span class="year">'26</span></span>
+                      <span class="venue-chip" title="ACCV 2026 - SAGA & SoccerNet 2026 Results">ACCV <span class="year">'26</span></span>
+                      <span class="venue-chip" title="MMM 2026 - VENUS">MMM <span class="year">'26</span></span>
+                      <span class="venue-chip" title="ICMV 2026 - TreeSoc">ICMV <span class="year">'26</span></span>
+                      <span class="venue-chip" title="SOICT 2025 - V-AAL">SOICT <span class="year">'25</span></span>
+                      <span class="venue-chip" title="MAPR 2025 - Saturn">MAPR <span class="year">'25</span></span>
+                    </div>
                   </td>
                 </tr>
               </tbody>
@@ -493,14 +512,14 @@
                     </script>
                   </td>
                   <td style="padding: 8px; width: 80%; vertical-align: middle">
-                    <span class="tag conf-arxiv">arXiv'26</span>
-                    <a href="https://arxiv.org/abs/2607.xxxx">
+                    <span class="tag conf-accv">ACCV'26</span>
+                    <a href="https://github.com/thanhnhan29/SAGA">
                       <span class="papertitle">SAGA: Stable Acceleration Guidance for Autoregressive Video Generation</span>
                     </a>
                     <br />
                     <strong>Thanh-Nhan Vo</strong>, Trong-Thuan Nguyen, Trung-Hoang Le, Tam V. Nguyen, Minh-Triet Tran
                     <br />
-                    <em>arXiv (Comming Soon)</em>, 2026
+                    <em>Asian Conference on Computer Vision (ACCV)</em>, 2026
                     <br />
                     <a href="https://github.com/thanhnhan29/SAGA">Project Page</a> /
                     <a href="https://arxiv.org/abs/2607.xxxx">Paper</a> /
@@ -530,14 +549,14 @@
                     </script>
                   </td>
                   <td style="padding: 8px; width: 80%; vertical-align: middle">
-                    <span class="tag conf-arxiv">arXiv'26</span>
+                    <span class="tag conf-accv">ACCV'26</span>
                     <a href="https://arxiv.org/abs/2607.07320">
                       <span class="papertitle">SoccerNet 2026 Challenges Results</span>
                     </a>
                     <br />
                     SoccerNet 2026 Team (including <strong>Thanh-Nhan Vo</strong>)
                     <br />
-                    <em>arXiv</em>, 2026
+                    <em>Asian Conference on Computer Vision (ACCV)</em>, 2026
                     <br />
                     <a href="https://arxiv.org/abs/2607.07320">Challenge Report Paper</a>
                     <p></p>
@@ -891,17 +910,33 @@
                 <tr>
                   <td style="padding: 10px; border-top: 1px solid #ddd; margin-top: 20px;">
                     <p style="text-align: center; font-size: 12px; color: #666; margin: 0;">
-                      © 2025 Thanh-Nhan Vo · Last updated: July 2026 · Design inspired by <a href="https://jonbarron.info/" style="color: #1772d0;">Jon Barron</a> · 
-                      <span style="cursor: pointer; text-decoration: underline;" onclick="toggleVisitorMap()">Visitor Map</span>
+                      © 2025 Thanh-Nhan Vo · Last updated: September 2026 · Design inspired by <a href="https://jonbarron.info/" style="color: #1772d0;">Jon Barron</a> ·
+                      <span style="cursor: pointer; text-decoration: underline; color: #1772d0;" onclick="toggleVisitorMap()">Visitor Map</span>
                     </p>
-                    <div id="visitor-map-container" style="display: none; text-align: center; margin-top: 10px;">
-                      <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=tt&d=6S1_klH-6jQahJbFleG831JfFePX1Gl-D1JUcSLZYOE&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
+                    <div id="visitor-map-container" style="display: none; text-align: center; margin-top: 12px;">
+                      <div id="visitor-map-inner" style="display: inline-block; min-height: 180px; min-width: 300px;"></div>
+                      <div style="margin-top: 6px;">
+                        <a href="https://mapmyvisitors.com/web/1c2eb" target="_blank" style="color: #1772d0; font-size: 11px; text-decoration: none;">
+                          📍 View full visitor analytics & world map ↗
+                        </a>
+                      </div>
                     </div>
                     <script>
+                      var visitorMapLoaded = false;
                       function toggleVisitorMap() {
                         var container = document.getElementById('visitor-map-container');
                         if (container.style.display === 'none') {
                           container.style.display = 'block';
+                          if (!visitorMapLoaded) {
+                            visitorMapLoaded = true;
+                            var s = document.createElement('script');
+                            s.type = 'text/javascript';
+                            s.id = 'mapmyvisitors';
+                            s.src = 'https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=tt&d=6S1_klH-6jQahJbFleG831JfFePX1Gl-D1JUcSLZYOE&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353';
+                            document.getElementById('visitor-map-inner').appendChild(s);
+                          } else {
+                            window.dispatchEvent(new Event('resize'));
+                          }
                         } else {
                           container.style.display = 'none';
                         }
