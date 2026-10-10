@@ -265,3 +265,6 @@ div.lazy {
 @media (prefers-reduced-motion: reduce) {
     .list-hover { transition: none; }
 }
+
+.visitor-map summary { cursor: pointer; }
+#visitor-map-inner { min-height: 180px; width: 300px; max-width: 100%; }
