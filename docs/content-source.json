@@ -1,0 +1,272 @@
+{
+  "bio": "<p style=\"text-align: justify;\">\n                      I am currently a\n                      <strong style=\"color: #1772d0\">senior (4th-year) undergraduate student</strong>\n                      with a strong passion for scientific research, deeply\n                      dedicated to exploring the world of\n                      <strong style=\"color: #f09228\">Generative AI</strong> and\n                      <strong style=\"color: #f09228\">Video Reasoning</strong>.\n                    </p>\n<p style=\"text-align: justify;\">\n                      At present, I am working as a\n                      <strong>Research Assistant</strong> at\n                      <a href=\"https://selab.hcmus.edu.vn/\" target=\"_blank\" style=\"color: #1772d0; font-weight: 600\">SELAB (Software Engineering Laboratory)</a>, which belongs to the\n                      <span style=\"color: #5a5a5a; font-weight: 500\">University of Science, Vietnam National University – Ho\n                        Chi Minh City (VNU-HCM)</span>.\n                    </p>\n<p style=\"text-align: justify;\">\n                      I am fortunate to be conducting research under the\n                      guidance and mentorship of\n                      <a href=\"https://scholar.google.com/citations?user=ty0Njf0AAAAJ\" target=\"_blank\" style=\"color: #1772d0; font-weight: 600;\">PhD(c). Trong-Thuan Nguyen</a> and\n                      <a href=\"https://scholar.google.com/citations?user=lt2ATkkAAAAJ\" target=\"_blank\" style=\"color: #1772d0; font-weight: 600;\">Assoc. Prof. Minh-Triet Tran</a>, whose\n                      expertise and support have played a significant role in\n                      shaping my research mindset and academic direction.\n                    </p>\n<p style=\"margin-top: 15px; font-style: italic; color: #666\">\n                      Below is an overview of my research journey so far.\n                    </p>",
+  "callout": "\n                      <div style=\"margin-bottom: 3px;\">🚀 <strong>Next chapter loading...</strong>\n</div>\n                      I'm on the lookout for <strong>funded PhD / Master's</strong> positions as well as <strong>AI Residency / Research Internship</strong> opportunities.<br>\n                      Always excited to hop on new research adventures — feel free to say hi at <a href=\"mailto:vtnhan@selab.hcmus.edu.vn\">vtnhan@selab.hcmus.edu.vn</a>! 📬✨\n                    ",
+  "news": [
+    {
+      "date": "[Oct 2026]",
+      "html": "Presented our project at <strong style=\"color: #1772d0;\">Applied AI Lab Demo Day 2026</strong>, hosted by <strong style=\"color: #1772d0;\">SAIH</strong> and <strong style=\"color: #f09228;\">Google AI Futures Fund</strong>.",
+      "text": "Presented our project at Applied AI Lab Demo Day 2026, hosted by SAIH and Google AI Futures Fund.",
+      "category": "milestone"
+    },
+    {
+      "date": "[Oct 2026]",
+      "html": "Awarded the <strong style=\"color: #f09228;\">Student Travel Grant</strong> for <strong style=\"color: #1772d0;\">ACCV 2026</strong> in Osaka, Japan.",
+      "text": "Awarded the Student Travel Grant for ACCV 2026 in Osaka, Japan.",
+      "category": "award"
+    },
+    {
+      "date": "[Oct 2026]",
+      "html": "Received the <strong style=\"color: #f09228;\">Pony Chung Scholarship Award</strong> (Pony Chung Foundation &amp; VNU-HCM).",
+      "text": "Received the Pony Chung Scholarship Award (Pony Chung Foundation & VNU-HCM).",
+      "category": "award"
+    },
+    {
+      "date": "[Sep 2026]",
+      "html": "Two papers (<strong style=\"color: #1772d0;\">SAGA</strong> and <strong style=\"color: #1772d0;\">SoccerNet 2026 Challenges Results</strong>) accepted at <strong style=\"color: #1772d0;\">ACCV 2026</strong>!",
+      "text": "Two papers (SAGA and SoccerNet 2026 Challenges Results) accepted at ACCV 2026!",
+      "category": "paper"
+    },
+    {
+      "date": "[Aug 2026]",
+      "html": "One paper accepted at <strong style=\"color: #1772d0;\">AI City Challenge Workshop @ ECCV 2026</strong>.",
+      "text": "One paper accepted at AI City Challenge Workshop @ ECCV 2026.",
+      "category": "paper"
+    },
+    {
+      "date": "[Jul 2026]",
+      "html": "Won the <strong style=\"color: #f09228;\">Best Project</strong> award at <strong style=\"color: #1772d0;\">SSIP'26</strong> with team <strong>AgentSys</strong>.",
+      "text": "Won the Best Project award at SSIP'26 with team AgentSys.",
+      "category": "award"
+    },
+    {
+      "date": "[Jun 2026]",
+      "html": "One paper (<strong style=\"color: #1772d0;\">TreeSoc</strong>) accepted at <strong style=\"color: #1772d0;\">ICMV 2026</strong>.",
+      "text": "One paper (TreeSoc) accepted at ICMV 2026.",
+      "category": "paper"
+    },
+    {
+      "date": "[Jun 2026]",
+      "html": "Won the <strong style=\"color: #f09228;\">Second Prize</strong> (Potential Division) at <strong style=\"color: #1772d0;\">HCMUS-CTF 2026</strong>.",
+      "text": "Won the Second Prize (Potential Division) at HCMUS-CTF 2026.",
+      "category": "award"
+    },
+    {
+      "date": "[Jun 2026]",
+      "html": "Secured <strong style=\"color: #f09228\">Rank 3</strong> in the <strong style=\"color: #1772d0;\">ACM MM 2026</strong> <strong>TRIDENT Grand Challenge</strong>.",
+      "text": "Secured Rank 3 in the ACM MM 2026 TRIDENT Grand Challenge.",
+      "category": "award"
+    },
+    {
+      "date": "[May 2026]",
+      "html": "Achieved <strong style=\"color: #2980b9;\">Top 10</strong> in the <strong style=\"color: #1772d0;\">CVPR 2026</strong> <strong>SoccerNetVQA Challenge</strong>.",
+      "text": "Achieved Top 10 in the CVPR 2026 SoccerNetVQA Challenge.",
+      "category": "award"
+    },
+    {
+      "date": "[Apr 2026]",
+      "html": "Selected as a <strong>Batch 1 Researcher</strong> at <strong style=\"color: #1772d0;\">SAIH</strong> (Saigon AI Hub).",
+      "text": "Selected as a Batch 1 Researcher at SAIH (Saigon AI Hub).",
+      "category": "milestone"
+    },
+    {
+      "date": "[Jan 2026]",
+      "html": "Presented our work at <strong style=\"color: #1772d0;\">MMM'26</strong> (International Conference on Multimedia Modeling).",
+      "text": "Presented our work at MMM'26 (International Conference on Multimedia Modeling).",
+      "category": "paper"
+    },
+    {
+      "date": "[Dec 2025]",
+      "html": "Presented our work at <strong style=\"color: #1772d0;\">SOICT'25</strong> (International Symposium on Information and Communication Technology).",
+      "text": "Presented our work at SOICT'25 (International Symposium on Information and Communication Technology).",
+      "category": "paper"
+    },
+    {
+      "date": "[Dec 2025]",
+      "html": "Received <strong style=\"color: #f09228;\">Special Award</strong> at <strong>Data for Life</strong> (Hack for Growth 2025) with team <strong>AquaSafe</strong>.",
+      "text": "Received Special Award at Data for Life (Hack for Growth 2025) with team AquaSafe.",
+      "category": "award"
+    },
+    {
+      "date": "[Nov 2025]",
+      "html": "Received <strong style=\"color: #f09228;\">THE 2025 LOTTE SHIN KYUK-HO Scholarship Award</strong>.",
+      "text": "Received THE 2025 LOTTE SHIN KYUK-HO Scholarship Award.",
+      "category": "award"
+    },
+    {
+      "date": "[Aug 2025]",
+      "html": "Presented my first work at <strong style=\"color: #1772d0;\">MAPR'25</strong> (International Conference on Multimedia Analysis and Pattern Recognition).",
+      "text": "Presented my first work at MAPR'25 (International Conference on Multimedia Analysis and Pattern Recognition).",
+      "category": "paper"
+    },
+    {
+      "date": "[Mar 2025]",
+      "html": "Started as a <strong>Research Assistant</strong> at <strong style=\"color: #1772d0;\">SELAB</strong> (Software Engineering Laboratory), VNU-HCM",
+      "text": "Started as a Research Assistant at SELAB (Software Engineering Laboratory), VNU-HCM",
+      "category": "milestone"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Action-Aligned Retrieval with Pairwise Multimodal Reranking for Text-Based Person Anomaly Search",
+      "authors": [
+        "Thanh-Khoi Nguyen†",
+        "Thanh-Nhan Vo†",
+        "Minh-Triet Tran"
+      ],
+      "author_html": "Thanh-Khoi Nguyen<sup>†</sup>, <strong>Thanh-Nhan Vo<sup>†</sup></strong>, Minh-Triet Tran",
+      "pub": "AI City Challenge Workshop at ECCV",
+      "year": "2026",
+      "cover": "images/AICity.png",
+      "abstract": "Action-aligned retrieval with pairwise multimodal reranking for text-based person anomaly search.",
+      "links": {},
+      "selected": true,
+      "title_url": "#",
+      "badge": "ECCVW'26",
+      "award": null
+    },
+    {
+      "title": "SAGA: Stable Acceleration Guidance for Autoregressive Video Generation",
+      "authors": [
+        "Thanh-Nhan Vo",
+        "Trong-Thuan Nguyen",
+        "Trung-Hoang Le",
+        "Tam V. Nguyen",
+        "Minh-Triet Tran"
+      ],
+      "author_html": "<strong>Thanh-Nhan Vo</strong>, Trong-Thuan Nguyen, Trung-Hoang Le, Tam V. Nguyen, Minh-Triet Tran",
+      "pub": "Asian Conference on Computer Vision (ACCV)",
+      "year": "2026",
+      "cover": "images/SAGA.png",
+      "abstract": "A training-free stable acceleration guidance framework for autoregressive video generation that suppresses unstable high-frequency kinematic energy while preserving low-frequency semantic motion.",
+      "links": {
+        "Project Page": "https://thanhnhan29.github.io/SAGA/",
+        "Paper": "https://arxiv.org/abs/2607.08020",
+        "GitHub": "https://github.com/thanhnhan29/SAGA"
+      },
+      "selected": true,
+      "title_url": "https://thanhnhan29.github.io/SAGA/",
+      "badge": "ACCV'26",
+      "award": "Student Travel Grant"
+    },
+    {
+      "title": "SoccerNet 2026 Challenges Results",
+      "authors": [
+        "SoccerNet 2026 Team (including Thanh-Nhan Vo)"
+      ],
+      "author_html": "SoccerNet 2026 Team (including <strong>Thanh-Nhan Vo</strong>)",
+      "pub": "Asian Conference on Computer Vision (ACCV)",
+      "year": "2026",
+      "cover": "https://img.youtube.com/vi/TjX789boQGM/maxresdefault.jpg",
+      "abstract": "The SoccerNet 2026 Challenges constitute the sixth annual edition of the SoccerNet open benchmarking effort, dedicated to advancing computer vision research in sports video understanding.",
+      "links": {
+        "Challenge Report Paper": "https://arxiv.org/abs/2607.07320"
+      },
+      "selected": false,
+      "title_url": "https://arxiv.org/abs/2607.07320",
+      "badge": "ACCV'26",
+      "award": null
+    },
+    {
+      "title": "VENUS: Visual Editing with Noise Inversion Using Scene Graphs",
+      "authors": [
+        "Thanh-Nhan Vo",
+        "Trong-Thuan Nguyen",
+        "Tam V Nguyen",
+        "Minh-Triet Tran"
+      ],
+      "author_html": "<strong>Thanh-Nhan Vo</strong>, Trong-Thuan Nguyen, Tam V Nguyen, Minh-Triet Tran",
+      "pub": "International Conference on Multimedia Modeling (MMM)",
+      "year": "2026",
+      "cover": "images/VENUS.png",
+      "abstract": "Visual editing with noise inversion using scene graphs.",
+      "links": {
+        "Project Page": "https://thanhnhan29.github.io/venus-mmm26/",
+        "Paper": "https://arxiv.org/abs/2601.07219"
+      },
+      "selected": true,
+      "title_url": "https://arxiv.org/abs/2601.07219",
+      "badge": "MMM'26",
+      "award": null
+    },
+    {
+      "title": "TreeSoc: Tree-Structured Dynamic Reasoning and Tool Synergy for Soccer Video Understanding",
+      "authors": [
+        "Thanh-Nhan Vo",
+        "Thanh-Khoi Nguyen",
+        "Trong-Thuan Nguyen",
+        "Trung-Hoang Le",
+        "Minh-Triet Tran"
+      ],
+      "author_html": "<strong>Thanh-Nhan Vo</strong>, Thanh-Khoi Nguyen, Trong-Thuan Nguyen, Trung-Hoang Le, Minh-Triet Tran",
+      "pub": "International Conference on Machine Vision (ICMV)",
+      "year": "2026",
+      "cover": "images/TreeSoc.png",
+      "abstract": "Tree-structured dynamic reasoning and tool synergy for soccer video understanding.",
+      "links": {},
+      "selected": false,
+      "title_url": "#",
+      "badge": "ICMV'26",
+      "award": null
+    },
+    {
+      "title": "SimGraph: A Unified Framework for Scene Graph-Based Image Generation and Editing",
+      "authors": [
+        "Thanh-Nhan Vo",
+        "Trong-Thuan Nguyen",
+        "Tam V Nguyen",
+        "Minh-Triet Tran"
+      ],
+      "author_html": "<strong>Thanh-Nhan Vo</strong>, Trong-Thuan Nguyen, Tam V Nguyen, Minh-Triet Tran",
+      "pub": "International Symposium on Information and Communication Technology (SOICT)",
+      "year": "2025",
+      "cover": "images/SimGraph.png",
+      "abstract": "A unified framework for scene graph-based image generation and editing.",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2601.21498"
+      },
+      "selected": false,
+      "title_url": "https://arxiv.org/abs/2601.21498",
+      "badge": "SOICT'25",
+      "award": null
+    },
+    {
+      "title": "Saturn: Autoregressive Image Generation Guided by Scene Graphs",
+      "authors": [
+        "Thanh-Nhan Vo",
+        "Trong-Thuan Nguyen",
+        "Tam V Nguyen",
+        "Minh-Triet Tran"
+      ],
+      "author_html": "<strong>Thanh-Nhan Vo</strong>, Trong-Thuan Nguyen, Tam V Nguyen, Minh-Triet Tran",
+      "pub": "2025 International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+      "year": "2025",
+      "cover": "images/SATURN.png",
+      "abstract": "Autoregressive image generation guided by scene graphs.",
+      "links": {},
+      "selected": true,
+      "title_url": "#",
+      "badge": "MAPR'25",
+      "award": null
+    }
+  ],
+  "projects": [
+    {
+      "title": "Batch 1 Researcher",
+      "badge": "Saigon AI Hub",
+      "meta": "Ho Chi Minh City, Vietnam",
+      "description_html": "Honored to be selected for the inaugural cohort as a <strong>Batch 1 Researcher</strong> at the <strong>Saigon AI Hub (SAIH)</strong> — a premier, strategic AI R&amp;D initiative jointly established by <strong style=\"color: #f09228\">VNG Group</strong> and <strong style=\"color: #f09228\">VNU-HCM</strong>, in collaboration with <strong style=\"color: #f09228\">Google Labs</strong>.",
+      "description": "Honored to be selected for the inaugural cohort as a Batch 1 Researcher at the Saigon AI Hub (SAIH) — a premier, strategic AI R&D initiative jointly established by VNG Group and VNU-HCM, in collaboration with Google Labs.",
+      "cover": "images/SAIH_logo.jpg",
+      "url": "https://vnuhcm.edu.vn/bai-viet/dhqg-hcm-va-vng-group-ra-mat-saigon-ai-hub-nen-tang-thuc-day-rd-ai-va-chuyen-doi-so-quoc-gia"
+    },
+    {
+      "title": "Image and Video Content Generation from Scene Graphs",
+      "badge": "VNU-HCM Grant",
+      "meta": "VNU-HCM National University Research Grant",
+      "description_html": "Participated in a national university-level research project focusing on generating image and video content from scene graph representations.",
+      "description": "Participated in a national university-level research project focusing on generating image and video content from scene graph representations.",
+      "cover": "images/VNU-HCM_logo.png",
+      "url": "#"
+    }
+  ]
+}

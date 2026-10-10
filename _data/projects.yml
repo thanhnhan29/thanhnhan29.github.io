@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Batch 1 Researcher",
+    "badge": "Saigon AI Hub",
+    "pub": "Ho Chi Minh City, Vietnam",
+    "abstract": "Honored to be selected for the inaugural cohort as a <strong>Batch 1 Researcher</strong> at the <strong>Saigon AI Hub (SAIH)</strong> — a premier, strategic AI R&amp;D initiative jointly established by <strong>VNG Group</strong> and <strong>VNU-HCM</strong>, in collaboration with <strong>Google Labs</strong>.",
+    "cover": "/images/SAIH_logo.jpg",
+    "links": {
+      "Project Page": "https://vnuhcm.edu.vn/bai-viet/dhqg-hcm-va-vng-group-ra-mat-saigon-ai-hub-nen-tang-thuc-day-rd-ai-va-chuyen-doi-so-quoc-gia"
+    }
+  },
+  {
+    "title": "Image and Video Content Generation from Scene Graphs",
+    "badge": "VNU-HCM Grant",
+    "pub": "VNU-HCM National University Research Grant",
+    "abstract": "Participated in a national university-level research project focusing on generating image and video content from scene graph representations.",
+    "cover": "/images/VNU-HCM_logo.png",
+    "links": {}
+  }
+]

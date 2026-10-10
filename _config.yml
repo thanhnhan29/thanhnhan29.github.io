@@ -1,0 +1,27 @@
+title: Thanh-Nhan Vo
+url: "https://thanhnhan29.github.io"
+baseurl: ""
+timezone: Asia/Ho_Chi_Minh
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-email-protect
+collections:
+  showcase:
+    output: false
+  publications:
+    output: false
+  news:
+    output: false
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - LICENSE
+  - docs
+  - scripts
+  - stylesheet.css
+  - CLAUDE.md
+  - .bundle
+  - .github

@@ -1,0 +1,13 @@
+---
+layout: default
+title: Travel
+navbar_title: Travel
+permalink: /travel/
+container_class: container-xl
+---
+<header class="pt-3">
+    <h1>Travel</h1>
+    <p class="text-muted mb-2">Conference notes &amp; places along the way.</p>
+</header>
+{% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
+{% include widgets/showcase_grid.html groups=cards_by_group %}

@@ -1,0 +1,20 @@
+{% if include.entries.size > 0 %}
+<div class="mx-2 my-1 background-group">
+    <h6>{{ include.title }}</h6>
+    <ul class="list-unstyled mb-1">
+        {% for item in include.entries %}
+        <li class="media education-entry list-hover">
+            {% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="institution-logo {{ item.logo_class }}">{% endif %}
+            <div class="media-body">
+                <div class="institution-name">{{ item.name }}</div>
+                {% if item.dept %}<div class="small">{{ item.dept }}</div>{% endif %}
+                <div class="small education-meta">
+                    <div>{{ item.position }}</div>
+                    <div class="text-muted"><em>{{ item.date }}</em></div>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}

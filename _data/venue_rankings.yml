@@ -1,0 +1,33 @@
+{
+  "ACCV": {
+    "group": "b",
+    "label": "ICORE2026 · B",
+    "source": "https://portal.core.edu.au/conf-ranks/167/"
+  },
+  "MMM": {
+    "group": "b",
+    "label": "ICORE2026 · B",
+    "source": "https://portal.core.edu.au/conf-ranks/?by=all&page=1&search=MMM&sort=arank&source=all"
+  },
+  "ICMV": {
+    "group": "c",
+    "label": "ICORE2026 · C",
+    "source": "https://portal.core.edu.au/conf-ranks/?by=all&page=1&search=ICMV&sort=arank&source=all"
+  },
+  "MAPR": {
+    "group": "scopus",
+    "label": "Scopus · conference indexing reported by UIT",
+    "source": "https://thuvien.uit.edu.vn/bai-viet/thong-bao-ve-hoi-nghi-mapr"
+  },
+  "SOICT": {
+    "group": "scopus",
+    "label": "Scopus · proceedings indexing announced by organizer",
+    "source": "https://soict.org/2025/?p=1818"
+  },
+  "ECCV": {
+    "group": "workshop",
+    "label": "ECCV workshop · main conference A* does not rank this workshop",
+    "display": "ECCV W",
+    "source": "https://portal.core.edu.au/conf-ranks/?by=all&page=1&search=ECCV&sort=arank&source=all"
+  }
+}

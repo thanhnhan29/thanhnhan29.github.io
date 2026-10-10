@@ -1,0 +1,20 @@
+{
+  "pages": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Publications",
+      "url": "/publications/"
+    },
+    {
+      "name": "Projects",
+      "url": "/projects/"
+    },
+    {
+      "name": "Travel",
+      "url": "/travel/"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<div class="row mt-3">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4 experience-card">
+                <div class="pb-3 mb-4 border-bottom border-gray">
+                    {% include widgets/background_entries.html title="Education" entries=site.data.profile.education %}
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        {% include widgets/background_entries.html title="Experience" entries=site.data.profile.experience %}
+                    </div>
+
+                    {% if site.data.profile.awards %}
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="mx-2 my-1">
+                            <h6>Honors & Awards</h6>
+                            <ul class="list-unstyled small mb-0 awards-list">
+                                {% for item in site.data.profile.awards %}
+                                <li>
+                                    <div class="award-entry list-hover">
+                                        <div class="award-name">{{ item.name }}</div>
+                                        <div class="award-year text-muted"><em>{{ item.date }}</em></div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

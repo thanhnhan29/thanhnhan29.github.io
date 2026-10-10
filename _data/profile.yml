@@ -1,0 +1,56 @@
+{
+  "primary_name": "Thanh-Nhan Vo",
+  "secondary_name": "",
+  "navbar_name": "Thanh-Nhan Vo",
+  "positions": [
+    {
+      "name": "Research Assistant"
+    },
+    {
+      "name": "SELAB, University of Science, VNU-HCM"
+    }
+  ],
+  "email": "vtnhan@selab.hcmus.edu.vn",
+  "gscholar": "segtRgEAAAAJ",
+  "facebook": "https://www.facebook.com/thanhnhan.296/",
+  "short_bio_text_justify": true,
+  "short_bio": "<p>\n                      I am currently a\n                      <strong>senior (4th-year) undergraduate student</strong>\n                      with a strong passion for scientific research, deeply\n                      dedicated to exploring the world of\n                      <strong>Generative AI</strong> and\n                      <strong>Video Reasoning</strong>.\n                    </p>\n<p>\n                      At present, I am working as a\n                      <strong>Research Assistant</strong> at\n                      <a href=\"https://selab.hcmus.edu.vn/\" target=\"_blank\">SELAB (Software Engineering Laboratory)</a>, which belongs to the\n                      <span>University of Science, Vietnam National University – Ho\n                        Chi Minh City (VNU-HCM)</span>.\n                    </p>\n<p>\n                      I am fortunate to be conducting research under the\n                      guidance and mentorship of\n                      <a href=\"https://scholar.google.com/citations?user=ty0Njf0AAAAJ\" target=\"_blank\">PhD(c). Trong-Thuan Nguyen</a> and\n                      <a href=\"https://scholar.google.com/citations?user=lt2ATkkAAAAJ\" target=\"_blank\">Assoc. Prof. Minh-Triet Tran</a>, whose\n                      expertise and support have played a significant role in\n                      shaping my research mindset and academic direction.\n                    </p>\n<p>\n                      Below is an overview of my research journey so far.\n                    </p>\n<div class=\"opportunity-callout mt-3\">\n                      <div>🚀 <strong>Next chapter loading...</strong>\n</div>\n                      I'm on the lookout for <strong>funded PhD / Master's</strong> positions as well as <strong>AI Residency / Research Internship</strong> opportunities.<br>\n                      Always excited to hop on new research adventures — feel free to say hi at <a href=\"mailto:vtnhan@selab.hcmus.edu.vn\">vtnhan@selab.hcmus.edu.vn</a>! 📬✨\n                    </div>",
+  "portrait_url": "/images/avt.jpg",
+  "education": [
+    {
+      "name": "University of Science, Vietnam National University – Ho Chi Minh City (VNU-HCM)",
+      "dept": "Information Technology (Honor's Program)",
+      "position": "Bachelor of Science",
+      "date": "Sep. 2023 - present",
+      "logo": "/images/hcmus-logo.png"
+    }
+  ],
+  "awards": [
+    {
+      "name": "Student Travel Grant, ACCV 2026",
+      "date": "2026"
+    },
+    {
+      "name": "Pony Chung Scholarship Award",
+      "date": "2026"
+    },
+    {
+      "name": "THE 2025 LOTTE SHIN KYUK-HO Scholarship Award",
+      "date": "2025"
+    }
+  ],
+  "experience": [
+    {
+      "name": "SELAB (Software Engineering Laboratory)",
+      "position": "Undergraduate Research Assistant",
+      "date": "Mar. 2025 - present",
+      "logo": "/images/SELAB.png"
+    },
+    {
+      "name": "Saigon AI Hub (SAIH)",
+      "logo": "/images/SAIH_logo.jpg",
+      "position": "Batch 1 Researcher",
+      "date": "Apr. 2026 - Oct. 2026"
+    }
+  ]
+}
