@@ -266,5 +266,6 @@ div.lazy {
     .list-hover { transition: none; }
 }
 
-.visitor-map summary { cursor: pointer; }
+.visitor-map-toggle { padding: 0; border: 0; background: none; font: inherit; cursor: pointer; }
+.visitor-map-toggle:hover { text-decoration: underline; }
 #visitor-map-inner { min-height: 180px; width: 300px; max-width: 100%; }
