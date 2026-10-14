@@ -1,0 +1,125 @@
+/* Photo journal styling is scoped to the Travel page. */
+.travel-intro { padding: 28px 8px 0; margin-bottom: 30px; }
+.travel-eyebrow { color: #65707a; font-size: .6875rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 10px; }
+.travel-intro h1 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.035em; margin-bottom: 12px; }
+.travel-description { color: #69717a; font-size: 1rem; margin: 0; }
+.travel-overview { padding: 0 8px 42px; scroll-margin-top: 85px; }
+.travel-index-tools { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; padding: 18px 0; margin-bottom: 22px; border-top: 1px solid #dce1e5; }
+.travel-index-tools > p { margin: 0; color: #69717a; font-size: .8125rem; }
+.travel-index-filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.travel-index-filters button { background: transparent; border: 0; color: #69717a; padding: 7px 11px; border-radius: 6px; font-size: .8125rem; cursor: pointer; }
+.travel-index-filters button[aria-pressed="true"] { color: #29333c; background: #e8edf0; font-weight: 700; }
+.travel-index { --index-gap: 24px; display: flex; flex-wrap: wrap; gap: var(--index-gap); position: relative; }
+.travel-index-sizer { position: absolute; width: calc((100% + var(--index-gap)) / 12 - var(--index-gap)); height: 0; }
+.travel-index-gutter { position: absolute; width: var(--index-gap); height: 0; }
+.travel-index-card { --layout-span: var(--card-span, 6); display: block; width: calc((100% + var(--index-gap)) * var(--layout-span) / 12 - var(--index-gap)); flex: none; margin-bottom: var(--index-gap); color: #29333c; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #e5e9ec; }
+.travel-index-card:hover { text-decoration: none; color: #29333c; border-color: #bbcbd8; }
+.travel-index-cover { aspect-ratio: var(--cover-ratio, 4 / 3); overflow: hidden; background: #e9edf0; }
+.travel-index-cover img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+.travel-index-card:hover img { transform: scale(1.025); }
+.travel-index-caption { padding: 21px 23px 19px; }
+.travel-index-caption .travel-eyebrow { letter-spacing: .1em; font-size: .625rem; margin-bottom: 8px; }
+.travel-index-caption h2 { font-size: 1.1875rem; line-height: 1.3; letter-spacing: -.015em; margin: 0 0 8px; }
+.travel-index-location { color: #69717a; font-size: .8125rem; margin: 0; }
+.travel-index-action { display: flex; align-items: center; justify-content: space-between; color: #65707a; font-size: .75rem; margin-top: 19px; }
+.travel-index-action > span { color: #1772d0; font-size: 1.125rem; }
+.travel-index-destination { font-size: 1rem; margin: 14px 0 8px; }
+.travel-index-destination > span { margin-right: 4px; }
+.travel-index-upcoming { background: #f1f5f8; border-color: #e0e8ef; }
+.travel-index-note .travel-index-caption { padding-top: 26px; padding-bottom: 22px; }
+.travel-index-note h2 { font-size: 1.375rem; }
+.travel-detail-nav { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin: 0 8px 34px; padding: 15px 0; border-top: 1px solid #dce1e5; border-bottom: 1px solid #dce1e5; scroll-margin-top: 85px; }
+.travel-back { font-size: .875rem; color: #1772d0; }
+.travel-back > span { margin-right: 6px; }
+.travel-detail-current { color: #69717a; font-size: .8125rem; }
+.travel-album-context { margin: 12px 0 0; font-size: .8125rem; color: #45515c; }
+.travel-overview[hidden], .travel-story[hidden], .travel-detail-nav[hidden], .travel-index-filters[hidden], .travel-index-card[hidden] { display: none !important; }
+.travel-journal { padding: 0 8px; }
+.travel-album { margin-bottom: 64px; scroll-margin-top: 85px; }
+.travel-album-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 24px; }
+.travel-album-heading h2 { font-size: clamp(1.5rem, 2.6vw, 2rem); letter-spacing: -.025em; margin-bottom: 8px; }
+.travel-album-note { color: #69717a; margin: 0; max-width: 560px; }
+.travel-album-meta { flex-shrink: 0; font-size: .8125rem; color: #45515c; text-align: right; margin: 0 0 3px; }
+.travel-album-meta span { display: block; color: #69717a; margin-top: 4px; }
+.travel-gallery { display: grid; gap: 24px; }
+.travel-gallery-feature { grid-template-columns: 2.25fr 1fr; }
+.travel-gallery-ceremony { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.travel-frame { margin: 0; min-width: 0; }
+.travel-photo-link { display: block; position: relative; border-radius: 12px; overflow: hidden; background: #e9edf0; }
+.travel-photo-link img { display: block; width: 100%; height: auto; transition: transform .35s ease; }
+.travel-gallery-feature .travel-photo-link { height: clamp(320px, 42vw, 480px); }
+.travel-gallery-feature img, .travel-gallery-ceremony img { height: 100%; object-fit: cover; }
+.travel-gallery-ceremony .travel-photo-link { aspect-ratio: 3 / 4; }
+.travel-frame-contain .travel-photo-link { background: #edf0f3; }
+.travel-frame-contain img { object-fit: contain; }
+.travel-frame figcaption { margin-top: 11px; font-size: .8125rem; color: #69717a; }
+.travel-photo-open { position: absolute; bottom: 12px; right: 12px; padding: 6px 10px; border-radius: 6px; background: rgba(255,255,255,.94); color: #35414a; font-size: .6875rem; opacity: 0; transform: translateY(4px); transition: opacity .2s, transform .2s; pointer-events: none; }
+.travel-photo-open span { margin-left: 7px; }
+.travel-photo-link:hover img { transform: scale(1.025); }
+.travel-photo-link:hover .travel-photo-open, .travel-photo-link:focus-visible .travel-photo-open { opacity: 1; transform: none; }
+.travel-photo-link:focus-visible, .travel-index-card:focus-visible, .travel-index-filters button:focus-visible, .travel-back:focus-visible, .travel-viewer button:focus-visible { outline: 3px solid #1772d0; outline-offset: 4px; }
+.travel-gallery-masonry { display: block; columns: 3; column-gap: 24px; }
+.travel-gallery-masonry .travel-frame { break-inside: avoid; margin-bottom: 24px; }
+.travel-story-note { margin-bottom: 64px; max-width: 780px; }
+.travel-note-content { padding: 28px 32px; background: #fff; border: 1px solid #e5e9ec; border-radius: 12px; font-size: 1rem; }
+.travel-note-content > p:last-child { margin-bottom: 0; }
+.travel-note-status { display: inline-block; font-size: .75rem; color: #45515c; background: #eef3f7; padding: 5px 10px; border-radius: 4px; }
+.travel-viewer { width: min(1100px, calc(100vw - 40px)); max-width: none; max-height: calc(100dvh - 40px); padding: 22px; border: 0; border-radius: 14px; color: #29333c; background: #f8fafb; box-shadow: 0 24px 80px rgba(20,30,40,.22); }
+.travel-viewer::backdrop { background: rgba(15,23,30,.78); }
+.travel-viewer-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 18px; }
+.travel-viewer-toolbar .travel-eyebrow { margin-bottom: 5px; }
+.travel-viewer-toolbar h2 { font-size: 1.125rem; margin: 0; }
+.travel-viewer button { border: 1px solid #d9dfe4; background: #f8fafb; color: #35414a; border-radius: 50%; width: 44px; height: 44px; font-size: 1.25rem; cursor: pointer; flex-shrink: 0; }
+.travel-viewer button:hover:not(:disabled) { background: #e9eef2; }
+.travel-viewer button:disabled { opacity: .35; cursor: default; }
+.travel-viewer .travel-viewer-close { font-size: 1.75rem; }
+.travel-viewer-image img { display: block; width: 100%; height: min(68dvh, 780px); object-fit: contain; }
+.travel-viewer-bottom { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; }
+.travel-viewer-count { color: #69717a; margin: 0; font-size: .8125rem; }
+.travel-viewer-controls { display: flex; gap: 10px; }
+body.travel-viewer-open { overflow: hidden; }
+@media (min-width: 480px) and (max-width: 991.98px) {
+  .travel-index { --index-gap: 16px; }
+  .travel-index-card { --layout-span: 6; }
+  .travel-index-card[data-story-link="demo-day"], .travel-index-card[data-story-link="soict-2025"] { --layout-span: 8; }
+  .travel-index-card[data-story-link="pony-chung"], .travel-index-card[data-story-link="mapr-2025"] { --layout-span: 4; }
+  .travel-index-card[data-story-link="malmo"], .travel-index-card[data-story-link="note-accv-2026"] { --layout-span: 7; }
+  .travel-index-card[data-story-link="note-hometown"], .travel-index-card[data-story-link="note-siggraph-asia-2026"] { --layout-span: 5; }
+}
+@media (max-width: 767.98px) {
+  .travel-index-card { margin-bottom: 16px; }
+  .travel-index-caption { padding: 18px; }
+  .travel-intro { padding-top: 12px; margin-bottom: 32px; }
+  .travel-album { margin-bottom: 42px; }
+  .travel-album-heading { align-items: flex-start; flex-direction: column; gap: 12px; margin-bottom: 18px; }
+  .travel-album-meta { text-align: left; }
+  .travel-album-meta span { display: inline; margin-left: 10px; }
+  .travel-gallery { gap: 16px; }
+  .travel-gallery-feature { grid-template-columns: 1.6fr 1fr; }
+  .travel-gallery-feature .travel-photo-link { height: 280px; }
+  .travel-gallery-ceremony { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .travel-gallery-ceremony .travel-frame:last-child { max-width: 50%; grid-column: 1 / -1; }
+  .travel-gallery-masonry { columns: 2; column-gap: 16px; }
+  .travel-gallery-masonry .travel-frame { margin-bottom: 20px; }
+  .travel-photo-open { opacity: 1; transform: none; }
+}
+@media (max-width: 479.98px) {
+  .travel-index { --index-gap: 16px; }
+  .travel-index-card { --layout-span: 12; }
+  .travel-index-tools { gap: 10px; }
+  .travel-index-filters { gap: 2px; }
+  .travel-index-filters button { min-height: 44px; padding: 7px 10px; }
+  .travel-index-caption { padding: 20px; }
+  .travel-index-caption h2 { font-size: 1.25rem; }
+  .travel-note-content { padding: 22px; }
+  .travel-gallery-feature { grid-template-columns: 1fr; }
+  .travel-gallery-feature .travel-photo-link { height: auto; aspect-ratio: 4 / 3; }
+  .travel-gallery-feature .travel-frame:last-child .travel-photo-link { aspect-ratio: 3 / 4; }
+  .travel-gallery-feature .travel-frame:last-child { width: 68%; }
+  .travel-viewer { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); padding: 16px; border-radius: 10px; }
+  .travel-viewer-image img { height: 60dvh; }
+  .travel-viewer-toolbar h2 { font-size: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .travel-photo-link img, .travel-photo-open, .travel-index-cover img { transition: none; }
+}

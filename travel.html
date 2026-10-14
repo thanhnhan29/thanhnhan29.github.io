@@ -1,13 +1,99 @@
 ---
 layout: default
-title: Travel
+title: Travel & Moments
 navbar_title: Travel
 permalink: /travel/
 container_class: container-xl
+extra_css:
+  - /assets/css/travel.css
+extra_js:
+  - /assets/js/travel.js
 ---
-<header class="pt-3">
-    <h1>Travel</h1>
-    <p class="text-muted mb-2">Conference notes &amp; places along the way.</p>
+<header class="travel-intro">
+    <p class="travel-eyebrow">A personal photo journal</p>
+    <h1>Travel &amp; moments</h1>
+    <p class="travel-description">Conferences, milestones, and the moments in between.</p>
 </header>
-{% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
-{% include widgets/showcase_grid.html groups=cards_by_group %}
+<section class="travel-overview" id="journeys" aria-label="Browse moments">
+    <div class="travel-index-tools">
+        <p>Choose a moment to see the story.</p>
+        <div class="travel-index-filters" role="group" aria-label="Filter moments" hidden>
+            <button type="button" data-travel-filter="all" aria-pressed="true">All moments</button>
+            {% assign album_years = site.data.travel_albums | map: 'year' | uniq | sort | reverse %}
+            {% for year in album_years %}<button type="button" data-travel-filter="{{ year }}" aria-pressed="false">{{ year }}</button>{% endfor %}
+            <button type="button" data-travel-filter="upcoming" aria-pressed="false">Next stops</button>
+        </div>
+    </div>
+    <div class="travel-index">
+        <div class="travel-index-sizer" aria-hidden="true"></div>
+        <div class="travel-index-gutter" aria-hidden="true"></div>
+        {% for album in site.data.travel_albums %}
+        <a class="travel-index-card" href="#{{ album.id }}" data-story-link="{{ album.id }}" data-year="{{ album.year }}" style="--cover-ratio: {{ album.cover_ratio }}; --card-span: {{ album.card_span | default: 6 }};">
+            <div class="travel-index-cover">
+                <img src="{{ '/assets/images/travel/' | append: album.cover | append: '-thumb.jpg' | relative_url }}" alt=""
+                     {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+            </div>
+            <div class="travel-index-caption">
+                <p class="travel-eyebrow">{{ album.when }}</p>
+                <h2>{{ album.card_title | default: album.title }}</h2>
+                <p class="travel-index-location">{{ album.location }}</p>
+                <span class="travel-index-action">{{ album.photos | size }} photos <span aria-hidden="true">&nearr;</span></span>
+            </div>
+        </a>
+        {% endfor %}
+        {% assign notes = site.showcase | where: 'show', true | sort: 'date' | reverse %}
+        {% for item in notes %}{% if item.upcoming or item.group == 'Home' %}
+        {% assign note_id = item.event | slugify | prepend: 'note-' %}
+        <a class="travel-index-card travel-index-note{% if item.upcoming %} travel-index-upcoming{% endif %}" href="#{{ note_id }}" data-story-link="{{ note_id }}"
+           data-year="{% if item.upcoming %}{{ item.group }}{% else %}home{% endif %}" data-upcoming="{{ item.upcoming | default: false }}"
+           style="--card-span: {% if item.group == 'Home' %}3{% elsif item.event == 'ACCV 2026' %}5{% else %}4{% endif %};">
+            <div class="travel-index-caption">
+                <p class="travel-eyebrow">{% if item.upcoming %}Next stop{% else %}Home base{% endif %}</p>
+                <h2>{{ item.event }}</h2>
+                <p class="travel-index-destination"><span aria-hidden="true">{{ item.flag }}</span> {% if item.group == 'Home' %}Ho Chi Minh City{% else %}{{ item.city }}{% endif %}</p>
+                <p class="travel-index-location">{{ item.when }}</p>
+                <span class="travel-index-action">{% if item.upcoming %}Upcoming{% else %}Read the note{% endif %} <span aria-hidden="true">&nearr;</span></span>
+            </div>
+        </a>
+        {% endif %}{% endfor %}
+    </div>
+</section>
+<nav class="travel-detail-nav" aria-label="Album navigation" hidden>
+    <a class="travel-back" href="#journeys"><span aria-hidden="true">&larr;</span> All moments</a>
+    <span class="travel-detail-current"></span>
+</nav>
+<div class="travel-journal">
+    {% for album in site.data.travel_albums %}
+        {% include widgets/travel_album.html album=album %}
+    {% endfor %}
+    {% for item in notes %}{% if item.upcoming or item.group == 'Home' %}
+    {% assign note_id = item.event | slugify | prepend: 'note-' %}
+    <section class="travel-story travel-story-note" id="{{ note_id }}" aria-labelledby="{{ note_id }}-title">
+        <div class="travel-album-heading">
+            <div>
+                <p class="travel-eyebrow">{% if item.upcoming %}Next stop{% else %}Home base{% endif %}</p>
+                <h2 id="{{ note_id }}-title" tabindex="-1">{{ item.event }}</h2>
+            </div>
+            <p class="travel-album-meta">{{ item.when }}<span>{% if item.group == 'Home' %}{{ item.country }}{% else %}{{ item.city }}, {{ item.country }}{% endif %}</span></p>
+        </div>
+        <div class="travel-note-content">
+            <p>{{ item.note }}</p>
+            {% if item.upcoming %}<p class="travel-note-status">Upcoming</p>{% endif %}
+        </div>
+    </section>
+    {% endif %}{% endfor %}
+</div>
+<dialog class="travel-viewer" aria-labelledby="travel-viewer-title">
+    <div class="travel-viewer-toolbar">
+        <div><p class="travel-eyebrow" id="travel-viewer-album"></p><h2 id="travel-viewer-title"></h2></div>
+        <button type="button" class="travel-viewer-close" aria-label="Close photo viewer"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="travel-viewer-image"><img alt=""></div>
+    <div class="travel-viewer-bottom">
+        <p class="travel-viewer-count" aria-live="polite"></p>
+        <div class="travel-viewer-controls">
+            <button type="button" data-direction="-1" aria-label="Previous photo"><span aria-hidden="true">&larr;</span></button>
+            <button type="button" data-direction="1" aria-label="Next photo"><span aria-hidden="true">&rarr;</span></button>
+        </div>
+    </div>
+</dialog>

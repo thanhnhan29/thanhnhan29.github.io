@@ -1,0 +1,27 @@
+<section class="travel-album travel-story" id="{{ include.album.id }}" aria-labelledby="{{ include.album.id }}-title">
+    <div class="travel-album-heading">
+        <div>
+            <p class="travel-eyebrow">{{ include.album.category }}</p>
+            <h2 id="{{ include.album.id }}-title" tabindex="-1">{{ include.album.title }}</h2>
+            <p class="travel-album-note">{{ include.album.note }}</p>
+            {% if include.album.context %}<p class="travel-album-context">{{ include.album.context }}</p>{% endif %}
+        </div>
+        <p class="travel-album-meta">{{ include.album.when }}<span>{{ include.album.location }}</span></p>
+    </div>
+    <div class="travel-gallery travel-gallery-{{ include.album.layout }}">
+        {% for photo in include.album.photos %}
+        <figure class="travel-frame{% if photo.contain %} travel-frame-contain{% endif %}">
+            <a class="travel-photo-link" href="{{ '/assets/images/travel/' | append: photo.id | append: '.jpg' | relative_url }}"
+               data-album="{{ include.album.id }}" data-album-title="{{ include.album.title | escape }}"
+               data-caption="{{ photo.caption | escape }}" aria-label="View photo: {{ photo.caption | escape }}">
+                <img src="{{ '/assets/images/travel/' | append: photo.id | append: '-thumb.jpg' | relative_url }}"
+                     alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}"
+                     {% if include.album.id == 'demo-day' and forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+                     decoding="async" style="object-position: {{ photo.focus | default: 'center' }};">
+                <span class="travel-photo-open" aria-hidden="true">View photo <span>&nearr;</span></span>
+            </a>
+            <figcaption>{{ photo.caption }}</figcaption>
+        </figure>
+        {% endfor %}
+    </div>
+</section>

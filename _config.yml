@@ -25,3 +25,9 @@ exclude:
   - CLAUDE.md
   - .bundle
   - .github
+  - node_modules
+  - dist
+  - academic-homepage
+  - .worktrees
+  - .better-web-ui.md
+  - images/travel

@@ -1,0 +1,148 @@
+- id: demo-day
+  year: 2026
+  cover: demo-day-stage
+  cover_ratio: 16 / 10
+  card_span: 7
+  short_title: Demo Day
+  category: Research, off the page
+  title: Applied AI Lab Demo Day
+  when: October 2026
+  location: Saigon AI Hub
+  note: A day of sharing our work, meeting people, and taking ideas beyond the lab.
+  layout: feature
+  photos:
+    - id: demo-day-stage
+      caption: Sharing our work on stage
+      alt: Thanh-Nhan presenting on the Applied AI Lab Demo Day 2026 stage
+      width: 1100
+      height: 826
+      focus: center
+    - id: demo-day-badge
+      caption: A small keepsake from the day
+      alt: Thanh-Nhan's Saigon AI Hub Researcher badge at Applied AI Lab Demo Day 2026
+      width: 825
+      height: 1100
+      focus: center
+- id: pony-chung
+  year: 2026
+  cover: pony-chung-ceremony
+  cover_ratio: 3 / 4
+  card_span: 5
+  short_title: Pony Chung
+  category: A milestone to remember
+  title: Pony Chung Scholarship
+  when: October 2026
+  location: VNU-HCM
+  note: A few photographs from the scholarship ceremony.
+  layout: ceremony
+  photos:
+    - id: pony-chung-ceremony
+      caption: At the scholarship ceremony
+      alt: Thanh-Nhan holding a certificate and flowers in front of the Pony Chung scholarship ceremony backdrop
+      width: 825
+      height: 1100
+      focus: center 40%
+    - id: pony-chung-vnuhcm
+      caption: A moment at VNU-HCM
+      alt: Thanh-Nhan with his scholarship certificate and flowers beside the VNU-HCM emblem
+      width: 825
+      height: 1100
+      focus: center 40%
+    - id: pony-chung-moments
+      caption: Snapshots from the day
+      alt: A collage of the Pony Chung scholarship ceremony, certificate, flowers, and gifts
+      width: 619
+      height: 1100
+      contain: true
+- id: malmo
+  year: 2026
+  cover: malmo-city-view
+  cover_ratio: 4 / 3
+  card_span: 5
+  card_title: ECCV 2026 & Malmö
+  context: One paper accepted at AI City Challenge Workshop @ ECCV 2026.
+  short_title: Malmö
+  category: Along the way
+  title: A little time in Malmö
+  when: September 2026
+  location: Malmö, Sweden
+  note: City views, quiet streets, and a few moments between conference days.
+  layout: masonry
+  photos:
+    - id: malmo-city-view
+      caption: Above the city
+      alt: Thanh-Nhan overlooking the city under a bright, cloud-filled sky
+      width: 1100
+      height: 825
+    - id: malmo-landmark
+      caption: A stop along the way
+      alt: A historic brick building with a tall spire framed by trees
+      width: 825
+      height: 1100
+    - id: malmo-street
+      caption: An evening walk
+      alt: A walk along a brick-lined city street beside an outdoor clock
+      width: 825
+      height: 1100
+    - id: malmo-monument
+      caption: Details from the city
+      alt: An equestrian monument with a stone pedestal and cloudy sky
+      width: 825
+      height: 1100
+    - id: malmo-park
+      caption: A quiet moment in the park
+      alt: Thanh-Nhan taking a photograph in a green park with sunlit trees
+      width: 1100
+      height: 825
+- id: soict-2025
+  year: 2025
+  cover: soict-group-photo
+  cover_ratio: 3 / 2
+  card_span: 7
+  short_title: SOICT 2025
+  category: Research, in good company
+  title: SOICT 2025
+  when: December 2025
+  location: Nha Trang, Vietnam
+  note: Presented our work at SOICT'25, the International Symposium on Information and Communication Technology.
+  layout: masonry
+  photos:
+    - id: soict-presentation
+      caption: Presenting SimGraph
+      alt: Thanh-Nhan beside the SimGraph presentation slide at SOICT 2025
+      width: 1100
+      height: 825
+    - id: soict-friends
+      caption: Together at the conference
+      alt: A group photograph with friends in front of the SOICT conference entrance
+      width: 1100
+      height: 825
+    - id: soict-group-photo
+      caption: A photograph to remember
+      alt: A group photograph in front of the SOICT 2025 conference backdrop
+      width: 1100
+      height: 733
+- id: mapr-2025
+  year: 2025
+  cover: mapr-group-photo
+  cover_ratio: 1 / 1
+  card_span: 4
+  short_title: MAPR 2025
+  category: The first conference
+  title: MAPR 2025
+  when: August 2025
+  location: Nha Trang, Vietnam
+  note: Presented my first work at MAPR'25, the International Conference on Multimedia Analysis and Pattern Recognition.
+  layout: feature
+  photos:
+    - id: mapr-group-photo
+      caption: At MAPR 2025
+      alt: Thanh-Nhan and two colleagues in front of the MAPR 2025 conference backdrop
+      width: 1100
+      height: 826
+      focus: center 40%
+    - id: mapr-participation
+      caption: My first conference keepsake
+      alt: A MAPR 2025 participation certificate in the conference hall
+      width: 825
+      height: 1100
